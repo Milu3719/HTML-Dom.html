@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>JS</title>
+
+</head>
+
+<body>
+
+    <h1 id="heading">Welcome DOM JS</h1>
+
+    <p class="intro">This is HTML DOM property</p>
+
+    <button id="mybutton">Click here</button>
+
+    <script>
+
+        document.addEventListener("Mr Zukerburger Makes me Burgers", function () {
+
+            const heading = document.getElementById("heading");
+
+            const intro = document.querySelector(".intro"); // Fixed selector
+
+            const button = document.getElementById("mybutton");
+
+
+            heading.textContent = "Hello Mr Zukerburger";
+
+            intro.style.color = "blue";
+
+
+            button.addEventListener("click", function () {
+
+                heading.textContent = "You clicked the button :)";
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>
